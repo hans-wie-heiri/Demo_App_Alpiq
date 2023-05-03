@@ -21,7 +21,7 @@ The application does not replace a full and comprehensive data science project. 
 The application allows the prediction of hourly energy consumption with a selection of machine learning algorithms (a.k.a. models). \
 It is designed as a basic showcase of analytics and visualization skills.'
 
-page_icon = ':light_bulb:' # emoji : https://www.webfx.com/tools/emoji-cheat-sheet/
+page_icon = ':collision:' # emoji : https://www.webfx.com/tools/emoji-cheat-sheet/
 layout = 'centered' # derfault but can be chenged to wide
 
 st.set_page_config(page_title=page_title, page_icon=page_icon, layout=layout)
