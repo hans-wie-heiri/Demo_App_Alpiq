@@ -68,7 +68,7 @@ drawing_color_plotly = '#f72d4e'
 
 
 # --- Data upload
-
+st.markdown("""---""")
 st.header("Raw Data and Visualization")
 st.write('')
 st.subheader("About the Dataset [PJM Hourly Energy Consumption Data](https://www.kaggle.com/datasets/robikscube/hourly-energy-consumption)")
@@ -107,6 +107,7 @@ if len(df) < 10:
     df_name = use_csv_name
 
 ## head the data
+st.write('')
 st.subheader("The Raw Data")
 st.dataframe(df.head(1000))
 #st.dataframe(df.head(1000).style.set_precision(2))
@@ -155,7 +156,7 @@ st.subheader("Column Info")
 st.dataframe(show_info(df))
 
 # --- Plot features
-
+st.write('')
 st.subheader("Time Series Plot")
 st.write('By hovering over the plot you can see the options for zooming in, wirting on it, saving it and so forth.')
 
@@ -459,7 +460,7 @@ with st.expander("See Preprocessing Options"):
             'drop dupplicate instances' : 'drop'
         }
 
-        us_dup_handling = st.radio('How do you want to handle the dupplicate instances?', dup_handling.keys(), horizontal=True, index=0)
+        us_dup_handling = st.radio('How do you want to handle the dupplicate instances?', dup_handling.keys(), horizontal=True, index=1)
         
 
         if dup_handling[us_dup_handling] == 'drop':
